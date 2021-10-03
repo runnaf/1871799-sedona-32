@@ -1,9 +1,66 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
 
 .search {
   background-image: url("../img/icons/search.svg");
   background-repeat: no-repeat;
 }
 
+.body-main {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #333333;
+  background-color: #FFFFFF;
+}
+
+.main-page {
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+.button {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #83B3D3;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.button-brown {
+  background-color: #756257;
+}
+
+.page-header {
+  color: #000000;
+  background-color: #FFFFFF;
+  font-size: 20px;
+  line-height: 26px;
+  font-style: normal;
+  font-weight: 700;
+}
 
 .favorite {
   background-image: url("../img/icons/favorite.svg");
@@ -13,6 +70,41 @@
 .presentation {
   background-image: url("../img/background-mountains-decoration.jpg");
   background-repeat: no-repeat;
+  background-color: #756257;
+}
+
+.main-title {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.reasons {
+  font-size: 22px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.advantage-item {
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.advantage-title {
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.advantage-darkgray {
+  background: rgba(131, 179, 211, 0.2);
+}
+
+.advantage-gray {
+  background: rgba(131, 179, 211, 0.12);
 }
 
 .advantage-item:nth-of-type(2) {
@@ -30,9 +122,55 @@
   background-repeat: no-repeat;
 }
 
-.footer-ineer-newsletter {
+.advantage{
+  color: #FFFFFF;
+  background-color: #83B3D3;
+}
+
+.search-hotel p:nth-of-type(1) {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.search-hotel p:nth-of-type(2) {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.search-hotel .button {
+  font-size: 20px;
+  line-height: 36px
+}
+
+.footer-inner-newsletter {
+  color: #FFFFFF;
+  background-color: #756257
+}
+
+.footer-image {
   background-image: url("../img/background-washed-out.jpg");
   background-repeat: no-repeat;
+  background-color: #756257;
+  color: #FFFFFF;
+}
+
+.footer-inner-newsletter h2 {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.footer-ineer-newsletter p {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.newsletter-button {
+  font-size: 20px;
+  line-height: 26px;
 }
 
 .footer-social-item:nth-child(1) .button {
@@ -40,58 +178,159 @@
   background-repeat: no-repeat;
 }
 
-.footer-social-item:nth-child(2) .button{
+.footer-social-item:nth-child(2) .button {
   background-image: url("../img/icons/facebook-icon.svg");
   background-repeat: no-repeat;
 }
 
-.footer-social-item:nth-child(3) .button{
+.footer-social-item:nth-child(3) .button {
   background-image: url("../img/icons/youtube-icon.svg");
   background-repeat: no-repeat;
+}
+
+.footer-contacts-address-phone {
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 400;
+  color: #000000;
 }
 
 .htmlacademy-link {
   background-image: url("../img/logo/logo-htmlacademy.svg");
 }
 
+.main-catalog {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+  color: #333333;
+  background-color: #FFFFFF;
+}
+
+.choice-hotels {
+  background-image: url("../img/catalog-background-mountains.jpg");
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+  background-color: #756257;
+}
+
+.inner-header-title {
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+line-height: 21px;
+}
+
 .breadcrumbs-item:nth-child(1) .breadcrumbs-link {
   background-image: url("../img/icons/home-main.svg");
   background-repeat: no-repeat;
-  }
-
-.visually-card-hotel .visually-hidden:nth-child(1) {
-  background-image: url("../img/decoration-elements/list.svg");
-  background-repeat: no-repeat;
 }
 
-.visually-card-hotel .visually-hidden:nth-child(2) {
+.catalog-filter-title {
+  font-size: 20px;
+line-height: 26px;
+font-weight: 700;
+}
+
+.search-parameters {
+  background-color: #E5E5E5;
+}
+
+.output-area {
+  font-size: 30px;
+line-height: 39px;
+ont-weight: 700;
+text-transform: uppercase;
+color: #000000;
+}
+
+.title {
   background-image: url("../img/decoration-elements/title.svg");
   background-repeat: no-repeat;
 }
 
-.visually-card-hotel .visually-hidden:nth-child(3) {
+.item {
   background-image: url("../img/decoration-elements/item.svg");
   background-repeat: no-repeat;
 }
 
+.list {
+  background-image: url("../img/decoration-elements/list.svg");
+  background-repeat: no-repeat;
+}
+
+.product-card-title {
+  font-size: 24px;
+line-height: 31px;
+font-weight:700;
+color: #000000;
+}
+
+.button-green {
+  background-color: #7DB54F;
+}
+
 .hotel-card:nth-child(1) .visually-hidden {
-  background-image: url("../img/decoration-elements/star.svg");
+  background-image: url("../img/decoration-elements/star.svg"),
+  url("../img/decoration-elements/star.svg"),
+  url("../img/decoration-elements/star.svg"),
+  url("../img/decoration-elements/star.svg");
   background-repeat: no-repeat;
 }
 
 .hotel-card:nth-child(2) .visually-hidden {
-  background-image: url("../img/decoration-elements/star.svg");
+  background-image: url("../img/decoration-elements/star.svg"),
+  url("../img/decoration-elements/star.svg"),
+  url("../img/decoration-elements/star.svg");
   background-repeat: no-repeat;
 }
 
 .hotel-card:nth-child(3) .visually-hidden {
-  background-image: url("../img/decoration-elements/star.svg");
+  background-image: url("../img/decoration-elements/star.svg"),
+  url("../img/decoration-elements/star.svg");
   background-repeat: no-repeat;
 }
 
 .hotel-card:nth-child(4) .visually-hidden {
-  background-image: url("../img/decoration-elements/star.svg");
+  background-image: url("../img/decoration-elements/star.svg"),
+  url("../img/decoration-elements/star.svg");
   background-repeat: no-repeat;
 }
 
+.button-gray {
+  background-color: #F2F2F2;
+  font-weight: 400;
+}
 
+.download-more {
+  font-size: 20px;
+line-height: 26px;
+}
+
+.pagination-link {
+font-size: 20px;
+line-height: 26px;
+text-transform: uppercase;
+background-color: #83B3D3;
+}
+
+.pagination-current {
+  background-color: #E5E5E5;
+}
+
+.footer-white {
+  font-weight: 700;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.button-white {
+  color: #333333;
+  background-color: #FFFFFF;
+}
