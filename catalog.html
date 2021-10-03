@@ -4,10 +4,11 @@
 <head>
   <meta charset="utf-8">
   <title>Каталог</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 
-<body><!-- Комментарий чтобы сдать дз -->
+<body>
   <header class="page-header">
     <nav class="navigation">
       <ul class="navigation-list">
@@ -25,13 +26,13 @@
       </ul>
 
       <a class="logo-main" href="https://htmlacademy.ru">
-        <img src="#" alt="Логотип 'Syte of Cedona'">
+        <img src="img/logo/logo-sedona.svg" width="138" height="70" alt="Логотип 'Syte of Cedona'">
       </a>
 
       <ul class="navigation-list navigation-user">
         <li class="navigation-item">
           <a class="navigation-link" href="#">
-            <span class="visully-hidden">
+            <span class="visully-hidden search">
               Поиск
             </span>
           </a>
@@ -39,8 +40,8 @@
 
         <li class="navigation-item">
           <a class="navigation-link" href="#">
-            <span class="visully-hidden">Избранное</span>
-            <sup><span class="visually-hidden">Количество выбранных гостиниц</span></sup>
+            <span class="visully-hidden favorite">Избранное</span>
+            <sup><span class="visually-hidden favorite-quantity">Количество выбранных гостиниц</span></sup>
           </a>
         </li>
 
@@ -61,7 +62,9 @@
       <header class="inner-header">
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html"><img src="#" Alt="Логотип главной страницы"></a>
+            <a class="breadcrumbs-link" href="index.html">
+              <span class="visually-hidden">Логотип главной страницы</span>
+            </a>
           </li>
 
           <li class="breadcrumbs-item">
@@ -80,7 +83,7 @@
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="visually-hidden control-input" type="checkbox" name="pool" checked><!-- Для чего сдесь класс visually-hidden -->
+                <input class="visually-hidden control-input" type="checkbox" name="pool" checked>
                 <span class="control-mark"></span>
                 <span class="control-label">Бассейн</span>
               </label>
@@ -88,7 +91,7 @@
 
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="visually-hidden control-input" type="checkbox" name="parking" checked><!-- Для чего сдесь класс visually-hidden -->
+                <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
                 <span class="control-mark"></span>
                 <span class="control-label">Парковка</span>
               </label>
@@ -96,7 +99,7 @@
 
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="visually-hidden control-input" type="checkbox" name="wi-fi"><!-- Для чего сдесь класс visually-hidden -->
+                <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
                 <span class="control-mark"></span>
                 <span class="control-label">wi&hyphen;Fi</span>
               </label>
@@ -110,7 +113,7 @@
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="visually-hidden control-input" type="radio" name="hotel-group" value="hotel" checked><!-- Для чего сдесь класс visually-hidden -->
+                <input class="visually-hidden control-input" type="radio" name="hotel-group" value="hotel" checked>
                 <span class="control-mark"></span>
                 <span class="control-label">Гостиница</span>
               </label>
@@ -118,7 +121,7 @@
 
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="visually-hidden control-input" type="radio" name="hotel-group" value="motel"><!-- Для чего сдесь класс visually-hidden -->
+                <input class="visually-hidden control-input" type="radio" name="hotel-group" value="motel">
                 <span class="control-mark"></span>
                 <span class="control-label">Мотель</span>
               </label>
@@ -126,7 +129,7 @@
 
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="visually-hidden control-input" type="radio" name="hotel-group" value="apartmens"><!-- Для чего сдесь класс visually-hidden -->
+                <input class="visually-hidden control-input" type="radio" name="hotel-group" value="apartmens">
                 <span class="control-mark"></span>
                 <span class="control-label">Апартаменты</span>
               </label>
@@ -169,8 +172,7 @@
       <div class="output-area">
         <p class="output-field">
           Найдено гостиниц:
-          <output name="hoteloutput">38</output><!-- Как сделать найдено гостиниц (строки 169-174)? - там же должны быть значения по умолчанию, наверное - сколько всего гостиниц (если пользователь не вбил сортировку) и выводиться данные от кнопок "Применить" и "Сбросить".
-            сделала пока output но не знаю, может пока просто span.? -->
+          <output name="hoteloutput">38</output>
         </p>
       </div>
 
@@ -181,7 +183,7 @@
         <select class="select-control" id="sorting" name="sorting">
           <option value="cheap">Сначала дешевые</option>
 
-          <option value="expensive">Сначала дорогие</option><!--В селекте строки 180-186, прописаны option, на лайве показаны несколько значений option, это понятно, но я не знаю, где из моего макета их взять? Пока такие прописала.-->
+          <option value="expensive">Сначала дорогие</option>
 
           <option value="popular">Сначала популярные</option>
         </select>
@@ -198,7 +200,7 @@
           <span class="visually-hidden">Показать крупные карточки</span>
         </a>
 
-        <a href="#" class="button button-border"><!-- Запуталась с классами кнопочек, показывающих отображения карточек. Сделала как в барбершоп, но не понимаю почемы у одной два класса, а у других один. -->
+        <a href="#" class="button button-border">
           <span class="visually-hidden">Показать список</span>
         </a>
       </div>
@@ -208,7 +210,7 @@
 
         <ul class="hotel-list">
           <li class="hotel-card">
-            <img class="hotel-card-image" src="#" alt="Часовня Святого Креста">
+            <img class="hotel-card-image" src="img/catalog/hotel-1.jpg" alt="Часовня Святого Креста">
 
             <a class="hotel-card-link" href="#">
               <h3 class="product-card-title">Amara Resort & Spa</h3>
@@ -232,7 +234,7 @@
           </li>
 
           <li class="hotel-card">
-            <img class="hotel-card-image" src="#" alt="Дом на фоне гор в Седоне">
+            <img class="hotel-card-image" src="img/catalog/hotel-2.jpg" alt="Дом на фоне гор в Седоне">
 
             <a class="hotel-card-link" href="hotel.html">
               <h3 class="product-card-title">Desert Quail Inn</h3>
@@ -256,7 +258,7 @@
           </li>
 
           <li class="hotel-card">
-            <img class="hotel-card-image" src="#" alt="Национальный парк в Седоне">
+            <img class="hotel-card-image" src="img/catalog/hotel-3.jpg" alt="Национальный парк в Седоне">
 
             <a class="hotel-card-link" href="hotel.html">
               <h3 class="product-card-title">Villas at Poco Diablo</h3>
@@ -280,7 +282,7 @@
           </li>
 
           <li class="hotel-card">
-            <img class="hotel-card-image" src="#" alt="Дорога на Север в Седоне">
+            <img class="hotel-card-image" src="img/catalog/hotel-4.jpg" alt="Дорога на Север в Седоне">
 
             <a class="hotel-card-link" href="hotel.html">
               <h3 class="product-card-title">GreenTree Inn</h3>
@@ -384,8 +386,7 @@
       </address>
     </section>
     <section class="htmlacademy-list">
-      <h2 class="visully-hidden">HTMLAcademy</h2>
-      <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
+      <a class="htmlacademy-link" href="https://htmlacademy.ru/"><span class="visully-hidden">HTMLAcademy</span></a>
     </section>
   </footer>
 </body>

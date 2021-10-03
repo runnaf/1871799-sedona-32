@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
@@ -19,32 +20,32 @@
         </li>
 
         <li class="navigation-ithem">
-          <a class="navigation-link" href="hotels.html">Гостиницы</a>
+          <a class="navigation-link" href="catalog.html">Гостиницы</a>
         </li>
       </ul>
 
       <a class="logo-main" href="https://htmlacademy.ru">
-        <img src="#" alt="Логотип 'Syte of Cedona'">
+        <img src="img/logo/logo-sedona.svg" width="138" height="70" alt="Логотип 'Syte of Cedona'">
       </a>
 
-      <ul class="navigation-list navigation-user"><!--Зачем второму добавляется класс navigation-list-->
+      <ul class="navigation-list navigation-user">
         <li class="navigation-item">
-          <a class="navigation-link" href="#"><!-- Почему не кнопка. Сделала как в барбершоп, но не поняла почему не кнопка -->
-            <span class="visully-hidden">
+          <a class="navigation-link" href="#">
+            <span class="visully-hidden search">
               Поиск
             </span>
           </a>
         </li>
 
         <li class="navigation-item">
-          <a class="navigation-link" href="#"><!-- Почему не кнопка. Сделала как в барбершоп, но не поняла почему не кнопка -->
-            <span class="visully-hidden">Избранное</span>
-            <sup><span class="visually-hidden">Количество выбранных гостиниц</span></sup>
+          <a class="navigation-link" href="#">
+            <span class="visully-hidden favorite">Избранное</span>
+            <sup><span class="visually-hidden favorite-quantity">Количество выбранных гостиниц</span></sup>
           </a>
         </li>
 
         <li class="navigation-item">
-          <a class="navigation-link" href="#"><!-- Почему не кнопка. Сделала как в барбершоп, но не поняла почему не кнопка -->
+          <a class="navigation-link" href="#">
             <span class="visully-hidden">
               хочу сюда&excl;
             </span>
@@ -56,14 +57,16 @@
 
 
   <main>
-    <div class="presentation">
-      <img class="welcome-sedona" src="#"
-        alt="Надпись 'welcome to the gorgeous SEDONA because the Grand Canyon sucks!' на фоне гор">
-      <h1 class="advantage-title">Седона — небольшой городок в Аризоне, заслуживающий большего&excl;</h1>
-      <p class="advantage-description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон&excl;</p>
-    </div>
-
     <section class="advantages">
+      <div class="presentation">
+        <img class="welcome-sedona" src="img/welcom-describe.svg" width="458" height="352"
+          alt="Надпись 'welcome to the gorgeous SEDONA because the Grand Canyon sucks!' на фоне гор">
+      </div>
+
+      <h1 class="advantage-title">Седона — небольшой городок в Аризоне, заслуживающий большего&excl;</h1>
+
+      <p class="advantage-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон&excl;</p>
+
       <h2 class="visually-hidden">Преимущества</h2>
 
       <ul class="advantage-list">
@@ -74,26 +77,26 @@
             <p class="advantage-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
 
-          <img class="picture-sedona" src="#" alt="улица Седоны">
+          <img class="picture-sedona" src="img/street-sedona.jpg" width="800" height="384" alt="улица Седоны">
         </li>
 
-        <li class="advantage-item advantage-gray advice">
+        <li class="advantage-item advantage-gray">
           <h3 class="advantage-title">Жильё</h3>
           <p class="advantage-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
         </li>
 
-        <li class="advantage-item advice">
+        <li class="advantage-item">
           <h3 class="advantage-title">Еда</h3>
           <p class="advantage-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
         </li>
 
-        <li class="advantage-item advantage-gray advice">
+        <li class="advantage-item advantage-gray">
           <h3 class="advantage-title">Сувениры</h3>
           <p class="advantage-description">Не только китайского, но и настоящего местного производства!</p>
         </li>
 
         <li class="advantage">
-          <img class="picture-sedona" src="#" alt="Мост Дьявола в Седоне">
+          <img class="picture-sedona" src="img/devil's-bridge.jpg" width="800" height="384" alt="Мост Дьявола в Седоне">
 
           <div class="advantage-item advantage-blue">
             <h3 class="advantage-title">Там есть мост дьявола</h3>
@@ -181,8 +184,9 @@
     </section>
 
     <section class="htmlacademy-list">
-      <h2 class="visully-hidden">HTMLAcademy</h2>
-      <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
+      <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+        <span class="visully-hidden">HTMLAcademy</span>
+      </a>
     </section>
   </footer>
 </body>

@@ -1,0 +1,97 @@
+
+.search {
+  background-image: url("../img/icons/search.svg");
+  background-repeat: no-repeat;
+}
+
+
+.favorite {
+  background-image: url("../img/icons/favorite.svg");
+  background-repeat: no-repeat;
+}
+
+.presentation {
+  background-image: url("../img/background-mountains-decoration.jpg");
+  background-repeat: no-repeat;
+}
+
+.advantage-item:nth-of-type(2) {
+  background-image: url("../img/icons/home-icon.svg");
+  background-repeat: no-repeat;
+}
+
+.advantage-item:nth-of-type(3) {
+  background-image: url("../img/icons/burger-icon.svg");
+  background-repeat: no-repeat;
+}
+
+.advantage-item:nth-of-type(4) {
+  background-image: url("../img/icons/present-icon.svg");
+  background-repeat: no-repeat;
+}
+
+.footer-ineer-newsletter {
+  background-image: url("../img/background-washed-out.jpg");
+  background-repeat: no-repeat;
+}
+
+.footer-social-item:nth-child(1) .button {
+  background-image: url("../img/icons/instagram-icon.svg");
+  background-repeat: no-repeat;
+}
+
+.footer-social-item:nth-child(2) .button{
+  background-image: url("../img/icons/facebook-icon.svg");
+  background-repeat: no-repeat;
+}
+
+.footer-social-item:nth-child(3) .button{
+  background-image: url("../img/icons/youtube-icon.svg");
+  background-repeat: no-repeat;
+}
+
+.htmlacademy-link {
+  background-image: url("../img/logo/logo-htmlacademy.svg");
+}
+
+.breadcrumbs-item:nth-child(1) .breadcrumbs-link {
+  background-image: url("../img/icons/home-main.svg");
+  background-repeat: no-repeat;
+  }
+
+.visually-card-hotel .visually-hidden:nth-child(1) {
+  background-image: url("../img/decoration-elements/list.svg");
+  background-repeat: no-repeat;
+}
+
+.visually-card-hotel .visually-hidden:nth-child(2) {
+  background-image: url("../img/decoration-elements/title.svg");
+  background-repeat: no-repeat;
+}
+
+.visually-card-hotel .visually-hidden:nth-child(3) {
+  background-image: url("../img/decoration-elements/item.svg");
+  background-repeat: no-repeat;
+}
+
+.hotel-card:nth-child(1) .visually-hidden {
+  background-image: url("../img/decoration-elements/star.svg");
+  background-repeat: no-repeat;
+}
+
+.hotel-card:nth-child(2) .visually-hidden {
+  background-image: url("../img/decoration-elements/star.svg");
+  background-repeat: no-repeat;
+}
+
+.hotel-card:nth-child(3) .visually-hidden {
+  background-image: url("../img/decoration-elements/star.svg");
+  background-repeat: no-repeat;
+}
+
+.hotel-card:nth-child(4) .visually-hidden {
+  background-image: url("../img/decoration-elements/star.svg");
+  background-repeat: no-repeat;
+}
+
+
