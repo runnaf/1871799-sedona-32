@@ -68,7 +68,8 @@ li {
 }
 
 .presentation {
-  background-image: url("../img/background-mountains-decoration.jpg");
+  background-image: url("../img/decoration-elements/decor-zigzag.svg"),
+    url("../img/background-mountains.jpg");
   background-repeat: no-repeat;
   background-color: #756257;
 }
@@ -108,23 +109,26 @@ li {
 }
 
 .advantage-item:nth-of-type(2) {
-  background-image: url("../img/icons/home-icon.svg");
+  background-image: url("../img/icons/home.svg");
   background-repeat: no-repeat;
 }
 
 .advantage-item:nth-of-type(3) {
-  background-image: url("../img/icons/burger-icon.svg");
+  background-image: url("../img/icons/burger.svg");
   background-repeat: no-repeat;
 }
 
 .advantage-item:nth-of-type(4) {
-  background-image: url("../img/icons/present-icon.svg");
+  background-image: url("../img/icons/present.svg");
   background-repeat: no-repeat;
 }
 
 .advantage {
-  color: #FFFFFF;
   background-color: #83B3D3;
+}
+
+.font-white {
+  color:#FFFFFF;
 }
 
 .search-hotel p:nth-of-type(1) {
@@ -174,22 +178,23 @@ li {
 }
 
 .footer-social-item:nth-child(1) .button {
-  background-image: url("../img/icons/instagram-icon.svg");
+  background-image: url("../img/icons/instagram.svg");
   background-repeat: no-repeat;
 }
 
 .footer-social-item:nth-child(2) .button {
-  background-image: url("../img/icons/facebook-icon.svg");
+  background-image: url("../img/icons/facebook.svg");
   background-repeat: no-repeat;
 }
 
 .footer-social-item:nth-child(3) .button {
-  background-image: url("../img/icons/youtube-icon.svg");
+  background-image: url("../img/icons/youtube.svg");
   background-repeat: no-repeat;
 }
 
 .footer-contacts-address-phone {
   font-size: 40px;
+  font-style: normal;
   line-height: 40px;
   text-transform: uppercase;
   text-decoration: none;
@@ -198,7 +203,8 @@ li {
 }
 
 .htmlacademy-link {
-  background-image: url("../img/logo/logo-htmlacademy.svg");
+  background-image: url("../img/logo/htmlacademy.svg");
+  background-repeat: no-repeat;
 }
 
 .main-catalog {
@@ -210,7 +216,7 @@ li {
 }
 
 .choice-hotels {
-  background-image: url("../img/catalog-background-mountains.jpg");
+  background-image: url("../img/catalog/background-mountains.jpg");
   background-repeat: no-repeat;
   color: #FFFFFF;
   background-color: #756257;
