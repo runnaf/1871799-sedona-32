@@ -58,9 +58,8 @@
 
   <main class="main-catalog">
     <section class="catalog-hotels">
+      <h1 class="inner-header-title">Гостиницы Седона</h1>
       <section class="choice-hotels">
-        <h1 class="inner-header-title">Гостиницы Седона</h1>
-
         <header class="inner-header">
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
@@ -310,7 +309,7 @@
       </section>
 
       <div class="download-more">
-        <button class="button" type="submin">Загрузить еще</button>
+        <button class="button">Загрузить еще</button>
       </div>
 
       <ul class="pagination">
@@ -337,14 +336,14 @@
       </ul>
 
       <form class="sorting-type">
-        <label class="on-page" for="field-number-hotel">Гостиниц на странице&colon;</label>
+        <label class="on-page" for="quantity-hotels">Гостиниц на странице&colon;</label>
 
         <select class="quantity-hotels" id="quantity-hotels" name="sorting-hotels">
-          <option value="four">4</option>
+          <option value="paginator-four" selected>4</option>
 
-          <option value="sixteen">16</option>
+          <option value="paginator-sixteen">16</option>
 
-          <option value="thirty-two">32</option>
+          <option value="paginator-thirty-two">32</option>
         </select>
 
         <button class="visually-hidden" type="submit">Отсортировать гостиницы</button>
@@ -368,7 +367,7 @@
 
 
   <footer class="page-footer">
-    <section class="footer-social">
+    <div class="footer-social">
       <h2 class="visually-hidden">ссылки на соцсети</h2>
       <ul class="footer-social-list">
         <li class="footer-social-item">
@@ -387,17 +386,17 @@
           </a>
         </li>
       </ul>
-    </section>
-    <section class="footer-contacts">
+    </div>
+    <div class="footer-contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <address class="footer-contacts-address">
         <a class="footer-contacts-address-phone"
           href="tel:+78128121212">&#43;7 &lpar;812&rpar;812&ndash;12&ndash;128</a>
       </address>
-    </section>
-    <section class="htmlacademy-list">
+    </div>
+    <div class="htmlacademy-list">
       <a class="htmlacademy-link" href="https://htmlacademy.ru/"><span class="visully-hidden">HTMLAcademy</span></a>
-    </section>
+    </div>
   </footer>
 </body>
 

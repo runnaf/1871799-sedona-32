@@ -122,7 +122,7 @@ li {
   background-repeat: no-repeat;
 }
 
-.advantage{
+.advantage {
   color: #FFFFFF;
   background-color: #83B3D3;
 }
@@ -224,7 +224,7 @@ li {
 
 .breadcrumbs-link {
   font-size: 16px;
-line-height: 21px;
+  line-height: 21px;
 }
 
 .breadcrumbs-item:nth-child(1) .breadcrumbs-link {
@@ -234,8 +234,8 @@ line-height: 21px;
 
 .catalog-filter-title {
   font-size: 20px;
-line-height: 26px;
-font-weight: 700;
+  line-height: 26px;
+  font-weight: 700;
 }
 
 .search-parameters {
@@ -244,10 +244,10 @@ font-weight: 700;
 
 .output-area {
   font-size: 30px;
-line-height: 39px;
-ont-weight: 700;
-text-transform: uppercase;
-color: #000000;
+  line-height: 39px;
+  ont-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 .title {
@@ -267,9 +267,9 @@ color: #000000;
 
 .product-card-title {
   font-size: 24px;
-line-height: 31px;
-font-weight:700;
-color: #000000;
+  line-height: 31px;
+  font-weight: 700;
+  color: #000000;
 }
 
 .button-green {
@@ -278,28 +278,28 @@ color: #000000;
 
 .hotel-card:nth-child(1) .visually-hidden {
   background-image: url("../img/decoration-elements/star.svg"),
-  url("../img/decoration-elements/star.svg"),
-  url("../img/decoration-elements/star.svg"),
-  url("../img/decoration-elements/star.svg");
+    url("../img/decoration-elements/star.svg"),
+    url("../img/decoration-elements/star.svg"),
+    url("../img/decoration-elements/star.svg");
   background-repeat: no-repeat;
 }
 
 .hotel-card:nth-child(2) .visually-hidden {
   background-image: url("../img/decoration-elements/star.svg"),
-  url("../img/decoration-elements/star.svg"),
-  url("../img/decoration-elements/star.svg");
+    url("../img/decoration-elements/star.svg"),
+    url("../img/decoration-elements/star.svg");
   background-repeat: no-repeat;
 }
 
 .hotel-card:nth-child(3) .visually-hidden {
   background-image: url("../img/decoration-elements/star.svg"),
-  url("../img/decoration-elements/star.svg");
+    url("../img/decoration-elements/star.svg");
   background-repeat: no-repeat;
 }
 
 .hotel-card:nth-child(4) .visually-hidden {
   background-image: url("../img/decoration-elements/star.svg"),
-  url("../img/decoration-elements/star.svg");
+    url("../img/decoration-elements/star.svg");
   background-repeat: no-repeat;
 }
 
@@ -310,14 +310,14 @@ color: #000000;
 
 .download-more {
   font-size: 20px;
-line-height: 26px;
+  line-height: 26px;
 }
 
 .pagination-link {
-font-size: 20px;
-line-height: 26px;
-text-transform: uppercase;
-background-color: #83B3D3;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: uppercase;
+  background-color: #83B3D3;
 }
 
 .pagination-current {
