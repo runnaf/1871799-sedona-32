@@ -8,7 +8,7 @@
 </head>
 
 
-<body class="body-catalog">
+<body class="body-page">
   <header class="page-header">
     <nav class="navigation">
       <ul class="navigation-list description">
@@ -32,7 +32,7 @@
       <ul class="navigation-list navigation-user">
         <li class="navigation-item">
           <a class="navigation-link" href="#">
-            <span class="visully-hidden search">
+            <span class="visually-hidden search">
               Поиск
             </span>
           </a>
@@ -40,14 +40,14 @@
 
         <li class="navigation-item">
           <a class="navigation-link" href="#">
-            <span class="visully-hidden favorite">Избранное</span>
+            <span class="visually-hidden favorite">Избранное</span>
             <sup><span class="visually-hidden favorite-quantity">Количество выбранных гостиниц</span></sup>
           </a>
         </li>
 
         <li class="navigation-item">
           <a class="button button-brown" href="#">
-            <span class="visully-hidden">
+            <span class="visually-hidden">
               хочу сюда&excl;
             </span>
           </a>
@@ -58,8 +58,10 @@
 
   <main class="main-catalog">
     <section class="catalog-hotels">
-      <h1 class="inner-header-title">Гостиницы Седона</h1>
+      <h1 class="visually-hidden">Каталог гостиниц</h1>
+
       <section class="choice-hotels">
+        <h2 class="inner-header-title">Гостиницы Седона</h2>
         <header class="inner-header">
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
@@ -74,7 +76,7 @@
           </ul>
         </header>
 
-        <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
+        <h3 class="visually-hidden">Список гостиниц с фильтрами</h3>
 
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get"
           oninput="hoteloutput.value=submit-apply.value+reset-apply.value">
@@ -102,7 +104,7 @@
                 <label class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
                   <span class="control-mark"></span>
-                  <span class="control-label">wi&hyphen;Fi</span>
+                  <span class="control-label">Wi&hyphen;Fi</span>
                 </label>
               </li>
             </ul>
@@ -139,15 +141,15 @@
           </fieldset>
 
           <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Стоимость,&#8381;&colon;</legend>
+            <legend class="catalog-filter-title">Стоимость,&#32;&#8381;&colon;</legend>
 
             <p class="price">
               <label class="catalog-filter-label">
-                <input class="catalog-filter-input" type="number" name="min-price" placeholder="0 от">
+                <input class="catalog-filter-input" type="number" name="min-price" value="0" placeholder="от">
               </label>
-
+<!-- как сделать чтобы отображалось от и 0 и до 9000 в поле форм одновременно -->
               <label class="catalog-filter-label">
-                <input class="catalog-filter-input" type="number" name="max-price" placeholder="9000 до">
+                <input class="catalog-filter-input" type="number" name="max-price" value="9000" placeholder="до" >
               </label>
             </p>
 
@@ -163,8 +165,8 @@
           </fieldset>
 
           <div class="apply-buttons">
-            <input class="submit-apply" name="submit-apply" type="submit" value="Применить">
-            <input class="reset-apply" name="reset-apply" type="reset" value="Сбросить">
+            <input class="submit-apply button" name="submit-apply" type="submit" value="Применить">
+            <input class="reset-apply button button-transparent" name="reset-apply" type="reset" value="Сбросить">
           </div>
         </form>
       </section>
@@ -192,7 +194,7 @@
         <button class="visually-hidden" type="submit">Отсортировать гостиницы</button>
       </form>
 
-      <div class="visully-card-hotel">
+      <div class="visually-card-hotel">
         <a href="#" class="button">
           <span class="visually-hidden title">Показать карточки</span>
         </a>
@@ -207,7 +209,7 @@
       </div>
 
       <section class="hotel-cards">
-        <h2 class="visully-hidden">Карточки гостиниц</h2>
+        <h2 class="visually-hidden">Карточки гостиниц</h2>
 
         <ul class="hotel-list">
           <li class="hotel-card">
@@ -217,7 +219,8 @@
               <h3 class="product-card-title">Amara Resort & Spa</h3>
             </a>
 
-            <p>Гостиница от 4000 &#8381;</p>
+            <p>Гостиница</p>
+            <p>От 4000 &#8381;</p>
 
             <a href="#" class="button button-brown">Подробнее</a>
 
@@ -241,7 +244,8 @@
               <h3 class="product-card-title">Desert Quail Inn</h3>
             </a>
 
-            <p>Мотель от 3000 &#8381;</p>
+            <p>Мотель</p>
+            <p>От 3000 &#8381;</p>
 
             <a href="#" class="button button-brown">Подробнее</a>
 
@@ -265,7 +269,8 @@
               <h3 class="product-card-title">Villas at Poco Diablo</h3>
             </a>
 
-            <p>Апартаменты от 2000 &#8381;</p>
+            <p>Апартаменты</p>
+            <p>От 2000 &#8381;</p>
 
             <a href="#" class="button button-brown">Подробнее</a>
 
@@ -289,7 +294,8 @@
               <h3 class="product-card-title">GreenTree Inn</h3>
             </a>
 
-            <p>Гостиница от 3000 &#8381;</p>
+            <p>Гостиница</p>
+            <p>От 3000 &#8381;</p>
 
             <a href="#" class="button button-brown">Подробнее</a>
 
@@ -401,7 +407,7 @@
     </div>
 
     <div class="htmlacademy-list">
-      <a class="htmlacademy-link" href="https://htmlacademy.ru/"><span class="visully-hidden">HTMLAcademy</span></a>
+      <a class="htmlacademy-link" href="https://htmlacademy.ru/"><span class="visually-hidden">HTMLAcademy</span></a>
     </div>
   </footer>
 </body>

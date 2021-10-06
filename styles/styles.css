@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,31 +10,37 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
-
-
-.search {
-  background-image: url("../img/icons/search.svg");
-  background-repeat: no-repeat;
-}
-
-.body-main {
-  font-family: "PT Sans", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 21px;
+/* Почему шрифт не вешается на поля форм и можно ли так прописывать, значения по умолчанию  */
+.body-page,
+input,
+option,
+select {
+  font-family: "PT Sans", "Arial", sans-serif;
   color: #333333;
   background-color: #FFFFFF;
 }
 
 .main-page {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
   text-align: center;
 }
 
 li {
   list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+fieldset {
+  border: none;
 }
 
 .button {
@@ -47,25 +53,79 @@ li {
   background-color: #83B3D3;
   text-decoration: none;
   text-transform: uppercase;
+
+  border: none;
+  border-radius: 4px;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: #68A2CA;
+}
+/* при фокусе и когда проверяю табом у ссылки появляется черная рамка и рамка прописанная в css, как избавиться от черной? */
+.button:focus {
+  border: 3px solid #756257;
+}
+
+.button:active {
+  opacity: 0.3;
 }
 
 .button-brown {
   background-color: #756257;
 }
 
-.page-header {
-  color: #000000;
-  background-color: #FFFFFF;
+.navigation-link {
   font-size: 20px;
   line-height: 26px;
   font-style: normal;
   font-weight: 700;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.navigation-link:hover,
+.navigation-link:focus,
+.navigation:active {
+  color: #756257;
+}
+
+.navigation-link:focus {
+  border: 3px solid #83B3D3;
+  border-radius: 10px;
+}
+
+.navigation:active {
+  opacity: 0.3;
+}
+
+.button-brown:hover,
+.button-brown:focus,
+.button-brown:active {
+  background-color: #615048;
+}
+
+.button-brown:focus {
+  border: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+
+.button-brown:active {
+  opacity: 0.3;
+}
+
+.search {
+  background-image: url("../img/icons/search.svg");
+  background-repeat: no-repeat;
 }
 
 .favorite {
   background-image: url("../img/icons/favorite.svg");
   background-repeat: no-repeat;
 }
+
+
 
 .presentation {
   background-image: url("../img/decoration-elements/decor-zigzag.svg"),
@@ -79,13 +139,13 @@ li {
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
-  text-transform: uppercase;
 }
 
 .reasons {
   font-size: 22px;
   line-height: 36px;
   font-weight: 400;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .advantage-item {
@@ -98,6 +158,7 @@ li {
   font-size: 24px;
   line-height: 28px;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .advantage-darkgray {
@@ -128,7 +189,7 @@ li {
 }
 
 .font-white {
-  color:#FFFFFF;
+  color: #FFFFFF;
 }
 
 .search-hotel p:nth-of-type(1) {
@@ -136,6 +197,7 @@ li {
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+  font-weight: 700;
 }
 
 .search-hotel p:nth-of-type(2) {
@@ -145,12 +207,13 @@ li {
 
 .search-hotel .button {
   font-size: 20px;
-  line-height: 36px
+  line-height: 36px;
+  border-radius: 10px;
 }
 
 .footer-inner-newsletter {
   color: #FFFFFF;
-  background-color: #756257
+  background-color: #756257;
 }
 
 .footer-image {
@@ -166,7 +229,7 @@ li {
   text-transform: uppercase;
 }
 
-.footer-ineer-newsletter p {
+.footer-inner-newsletter p {
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
@@ -175,6 +238,7 @@ li {
 .newsletter-button {
   font-size: 20px;
   line-height: 26px;
+  border-radius: 0px 10px 10px 0px;
 }
 
 .footer-social-item:nth-child(1) .button {
@@ -207,12 +271,11 @@ li {
   background-repeat: no-repeat;
 }
 
-.main-catalog {
+.main-catalog,
+.main-catalog option {
   font-size: 18px;
   line-height: 23px;
   font-weight: 400;
-  color: #333333;
-  background-color: #FFFFFF;
 }
 
 .choice-hotels {
@@ -231,6 +294,7 @@ li {
 .breadcrumbs-link {
   font-size: 16px;
   line-height: 21px;
+  color: #FFFFFF;
 }
 
 .breadcrumbs-item:nth-child(1) .breadcrumbs-link {
@@ -244,14 +308,32 @@ li {
   font-weight: 700;
 }
 
+.catalog-filter-input {
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  color: inherit;
+  background-color: inherit;
+  border: 2px solid #FFFFFF;
+  border-radius: 4px;
+}
+
 .search-parameters {
   background-color: #E5E5E5;
 }
 
-.output-area {
+.button-transparent {
+  color: #FFFFFF;
+  background-color: inherit;
+  font-weight: inherit;
+  text-transform: inherit;
+}
+
+.output-area,
+.hoteloutput {
   font-size: 30px;
   line-height: 39px;
-  ont-weight: 700;
+  font-weight: 700;
   text-transform: uppercase;
   color: #000000;
 }
@@ -286,7 +368,7 @@ li {
   background-color: #7DB54F;
 }
 
-.hotel-card:nth-child(1) .visually-hidden {
+.hotel-card:nth-child(1) .rating {
   background-image: url("../img/decoration-elements/star.svg"),
     url("../img/decoration-elements/star.svg"),
     url("../img/decoration-elements/star.svg"),
@@ -294,20 +376,20 @@ li {
   background-repeat: no-repeat;
 }
 
-.hotel-card:nth-child(2) .visually-hidden {
+.hotel-card:nth-child(2) .rating {
   background-image: url("../img/decoration-elements/star.svg"),
     url("../img/decoration-elements/star.svg"),
     url("../img/decoration-elements/star.svg");
   background-repeat: no-repeat;
 }
 
-.hotel-card:nth-child(3) .visually-hidden {
+.hotel-card:nth-child(3) .rating {
   background-image: url("../img/decoration-elements/star.svg"),
     url("../img/decoration-elements/star.svg");
   background-repeat: no-repeat;
 }
 
-.hotel-card:nth-child(4) .visually-hidden {
+.hotel-card:nth-child(4) .rating {
   background-image: url("../img/decoration-elements/star.svg"),
     url("../img/decoration-elements/star.svg");
   background-repeat: no-repeat;
@@ -316,6 +398,7 @@ li {
 .button-gray {
   background-color: #F2F2F2;
   font-weight: 400;
+  color: #333333;
 }
 
 .download-more {
@@ -326,11 +409,14 @@ li {
 .pagination-link {
   font-size: 20px;
   line-height: 26px;
+  font-weight: 700;
   text-transform: uppercase;
+  color: #FFFFFF;
   background-color: #83B3D3;
 }
 
 .pagination-current {
+  color: #000000;
   background-color: #E5E5E5;
 }
 
