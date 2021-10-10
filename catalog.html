@@ -16,11 +16,11 @@
           <a class="navigation-link" href="index.html">Главная</a>
         </li>
 
-        <li class="navigation-ithem">
+        <li class="navigation-item">
           <a class="navigation-link" href="about-sedona.html">О Седоне</a>
         </li>
 
-        <li class="navigation-ithem">
+        <li class="navigation-item">
           <a class="navigation-link" href="catalog.html">Гостиницы</a>
         </li>
       </ul>
@@ -31,33 +31,31 @@
 
       <ul class="navigation-list navigation-user">
         <li class="navigation-item">
-          <a class="navigation-link" href="#">
-            <span class="visually-hidden search">
+          <a class="navigation-link search" href="#">
+            <span class="visually-hidden">
               Поиск
             </span>
           </a>
         </li>
 
         <li class="navigation-item">
-          <a class="navigation-link" href="#">
-            <span class="visually-hidden favorite">Избранное</span>
+          <a class="navigation-link favorite" href="#">
+            <span class="visually-hidden">Избранное</span>
             <sup><span class="visually-hidden favorite-quantity">Количество выбранных гостиниц</span></sup>
           </a>
         </li>
 
         <li class="navigation-item">
-          <a class="button button-brown" href="#">
-            <span class="visually-hidden">
-              хочу сюда&excl;
-            </span>
+          <a class="button button-brown button-description" href="#">
+            хочу сюда&excl;
           </a>
         </li>
       </ul>
     </nav>
   </header>
 
-  <main class="main-catalog">
-    <section class="catalog-hotels">
+  <main class="main-catalog main-container">
+    <div class="page-container">
       <h1 class="visually-hidden">Каталог гостиниц</h1>
 
       <section class="choice-hotels">
@@ -80,7 +78,7 @@
 
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get"
           oninput="hoteloutput.value=submit-apply.value+reset-apply.value">
-          <fieldset class="catalog-filter-group">
+          <fieldset class="catalog-filter-group ">
             <legend class="catalog-filter-title">Инфраструктура&colon;</legend>
 
             <ul class="catalog-filter-list">
@@ -147,9 +145,9 @@
               <label class="catalog-filter-label">
                 <input class="catalog-filter-input" type="number" name="min-price" value="0" placeholder="от">
               </label>
-<!-- как сделать чтобы отображалось от и 0 и до 9000 в поле форм одновременно -->
+              <!-- как сделать чтобы отображалось от и 0 и до 9000 в поле форм одновременно -->
               <label class="catalog-filter-label">
-                <input class="catalog-filter-input" type="number" name="max-price" value="9000" placeholder="до" >
+                <input class="catalog-filter-input" type="number" name="max-price" value="9000" placeholder="до">
               </label>
             </p>
 
@@ -164,48 +162,49 @@
             </p>
           </fieldset>
 
-          <div class="apply-buttons">
-            <input class="submit-apply button" name="submit-apply" type="submit" value="Применить">
-            <input class="reset-apply button button-transparent" name="reset-apply" type="reset" value="Сбросить">
+          <div class="catalog-filter-group">
+            <input class="submit-apply button-border-white" name="submit-apply" type="submit" value="Применить">
+            <input class="reset-apply button-transparent" name="reset-apply" type="reset" value="Сбросить">
           </div>
         </form>
       </section>
 
+      <div class="search-resalts">
+        <div class="output-area">
+          <p class="output-field">
+            Найдено гостиниц:
+            <output name="hoteloutput">38</output>
+          </p>
+        </div>
 
-      <div class="output-area">
-        <p class="output-field">
-          Найдено гостиниц:
-          <output name="hoteloutput">38</output>
-        </p>
-      </div>
 
+        <form class="sorting-type">
+          <label class="visually-hidden" for="sorting">Сортировка</label>
 
-      <form class="sorting-type">
-        <label class="visually-hidden" for="sorting">Сортировка</label>
+          <select class="select-control" id="sorting" name="sorting">
+            <option value="cheap">Сначала дешевые</option>
 
-        <select class="select-control" id="sorting" name="sorting">
-          <option value="cheap">Сначала дешевые</option>
+            <option value="expensive">Сначала дорогие</option>
 
-          <option value="expensive">Сначала дорогие</option>
+            <option value="popular">Сначала популярные</option>
+          </select>
 
-          <option value="popular">Сначала популярные</option>
-        </select>
+          <button class="visually-hidden" type="submit">Отсортировать гостиницы</button>
+        </form>
 
-        <button class="visually-hidden" type="submit">Отсортировать гостиницы</button>
-      </form>
+        <div class="visually-card-hotel">
+          <a href="#" class="button">
+            <span class="visually-hidden title">Показать карточки</span>
+          </a>
 
-      <div class="visually-card-hotel">
-        <a href="#" class="button">
-          <span class="visually-hidden title">Показать карточки</span>
-        </a>
+          <a href="#" class="button">
+            <span class="visually-hidden item">Показать крупные карточки</span>
+          </a>
 
-        <a href="#" class="button">
-          <span class="visually-hidden item">Показать крупные карточки</span>
-        </a>
-
-        <a href="#" class="button button-border">
-          <span class="visually-hidden list">Показать список</span>
-        </a>
+          <a href="#" class="button button-border">
+            <span class="visually-hidden list">Показать список</span>
+          </a>
+        </div>
       </div>
 
       <section class="hotel-cards">
@@ -231,9 +230,9 @@
                 Рейтинг звездочками
               </span>
 
-              <button class="button button-gray" type="button">
+              <span class="rating-description">
                 Рейтинг: 8,5
-              </button>
+              </span>
             </div>
           </li>
 
@@ -256,9 +255,9 @@
                 Рейтинг звездочками
               </span>
 
-              <button class="button button-gray" type="button">
+              <span class="rating-description">
                 Рейтинг: 8,9
-              </button>
+              </span>
             </div>
           </li>
 
@@ -281,9 +280,9 @@
                 Рейтинг звездочками
               </span>
 
-              <button class="button button-gray" type="button">
+              <span class="rating-description">
                 Рейтинг: 9,2
-              </button>
+              </span>
             </div>
           </li>
 
@@ -306,108 +305,117 @@
                 Рейтинг звездочками
               </span>
 
-              <button class="button button-gray" type="button">
+              <span class="rating-description">
                 Рейтинг: 9,2
-              </button>
+              </span>
             </div>
           </li>
         </ul>
       </section>
 
       <div class="download-more">
-        <button class="button">Загрузить еще</button>
+        <button class="button button-download">Загрузить еще</button>
       </div>
 
-      <ul class="pagination">
-        <li class="pagination-item">
-          <a class="pagination-link pagination-current">1</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">2</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">3</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">4</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link pagination-next" href="#">
-            <span class="visually-hidden">Следующая страница</span>
-          </a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link paginator-last" href="#">10</a>
-        </li>
-      </ul>
+      <div class="pagination-hotels">
+        <ul class="pagination">
+          <li class="pagination-item">
+            <a class="pagination-link pagination-current">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">3</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">4</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link pagination-next" href="#">
+              <span class="visually-hidden">Следующая страница</span>
+            </a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link paginator-last" href="#">10</a>
+          </li>
+        </ul>
 
-      <form class="sorting-type">
-        <label class="on-page" for="quantity-hotels">Гостиниц на странице&colon;</label>
+        <form class="sorting-type">
+          <label class="on-page" for="quantity-hotels">Гостиниц на странице&colon;</label>
 
-        <select class="quantity-hotels" id="quantity-hotels" name="sorting-hotels">
-          <option value="paginator-four" selected>4</option>
+          <select class="quantity-hotels" id="quantity-hotels" name="sorting-hotels">
+            <option value="paginator-four" selected>4</option>
 
-          <option value="paginator-sixteen">16</option>
+            <option value="paginator-sixteen">16</option>
 
-          <option value="paginator-thirty-two">32</option>
-        </select>
+            <option value="paginator-thirty-two">32</option>
+          </select>
 
-        <button class="visually-hidden" type="submit">Отсортировать гостиницы</button>
-      </form>
-    </section>
+          <button class="visually-hidden" type="submit">Отсортировать гостиницы</button>
+        </form>
+      </div>
 
 
-    <footer class="footer-inner-newsletter footer-white">
-      <h2 class="sing-up">Подпишитесь на рассылку</h2>
-      <p>Только полезная информация и никакого спама, честное бойскаутское&excl;</p>
-      <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-        <p class="newsletter-email">
-          <label class="visually-hidden" for="newsletter-email">Email</label>
-          <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
-          <button class="button newsletter-button" type="submit">Подписаться</button>
-        </p>
-      </form>
-    </footer>
+      <section class="section-newsletter background-white">
+        <div class="newsletter-container">
+          <h2 class="sing-up">Подпишитесь на рассылку</h2>
+          <p>Только полезная информация и никакого спама, честное бойскаутское&excl;</p>
+          <div class="form-float">
+            <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+              <p class="newsletter-email">
+                <label class="visually-hidden" for="newsletter-email">Email</label>
+                <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                <button class="button newsletter-button" type="submit">Подписаться</button>
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
   </main>
 
 
   <footer class="page-footer">
-    <div class="footer-social">
-      <h2 class="visually-hidden">ссылки на соцсети</h2>
+    <div class="footer-container">
+      <section class="footer-social">
+        <h2 class="visually-hidden">ссылки на соцсети</h2>
 
-      <ul class="footer-social-list">
-        <li class="footer-social-item">
-          <a class="button button-white" href="https://www.instagram.com/htmlacademy/">
-            <span class="visually-hidden">Инстаграм</span>
-          </a>
-        </li>
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a class="button button-white" href="https://www.instagram.com/htmlacademy/">
+              <span class="visually-hidden">Инстаграм</span>
+            </a>
+          </li>
 
-        <li class="footer-social-item">
-          <a class="button button-white" href="https://www.facebook.com/htmlacademy">
-            <span class="visually-hidden">Фэйсбук</span>
-          </a>
-        </li>
+          <li class="footer-social-item">
+            <a class="button button-white" href="https://www.facebook.com/htmlacademy">
+              <span class="visually-hidden">Фэйсбук</span>
+            </a>
+          </li>
 
-        <li class="footer-social-item">
-          <a class="button button-white" href="https://www.youtube/c/HTMLAcademyRUS">
-            <span class="visually-hidden">Ютуб</span>
-          </a>
-        </li>
-      </ul>
-    </div>
+          <li class="footer-social-item">
+            <a class="button button-white" href="https://www.youtube/c/HTMLAcademyRUS">
+              <span class="visually-hidden">Ютуб</span>
+            </a>
+          </li>
+        </ul>
+      </section>
 
-    <div class="footer-contacts">
-      <h2 class="visually-hidden">Контакты</h2>
+      <section class="footer-contacts">
+        <h2 class="visually-hidden">Контакты</h2>
 
-      <address class="footer-contacts-address">
-        <a class="footer-contacts-address-phone"
-          href="tel:+78128121212">&#43;7 &lpar;812&rpar;812&ndash;12&ndash;12</a>
-      </address>
-    </div>
+        <address class="footer-contacts-address">
+          <a class="footer-contacts-address-phone"
+            href="tel:+78128121212">&#43;7 &lpar;812&rpar;812&ndash;12&ndash;12</a>
+        </address>
+      </section>
 
-    <div class="htmlacademy-list">
-      <a class="htmlacademy-link" href="https://htmlacademy.ru/"><span class="visually-hidden">HTMLAcademy</span></a>
+      <section class="htmlacademy-list">
+        <h2 class="visually-hidden">Сведения о правообладателе</h2>
+        <a class="htmlacademy-link" href="https://htmlacademy.ru/"><span class="visually-hidden">HTMLAcademy</span></a>
+      </section>
     </div>
   </footer>
 </body>
