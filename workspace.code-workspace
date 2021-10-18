@@ -1,14 +1,13 @@
 {
 	"folders": [
 		{
-			"path": "..\\botanika"
-		},
-		{
-			"path": "..\\botanika-2"
-		},
-		{
 			"path": "."
+		},
+		{
+			"path": "..\\1871799-device-32"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "1871799-sedona-32"
+	}
 }
