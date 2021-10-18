@@ -9,68 +9,67 @@
 
 
 <body class="body-page">
-  <header class="page-header">
-    <nav class="navigation">
-      <ul class="navigation-list description">
-        <li class="navigation-item">
-          <a class="navigation-link" href="index.html">Главная</a>
-        </li>
+  <div class="container">
+    <header class="page-header">
+      <nav class="navigation">
+        <ul class="navigation-list description">
+          <li class="navigation-item">
+            <a class="navigation-link" href="index.html">Главная</a>
+          </li>
 
-        <li class="navigation-item">
-          <a class="navigation-link" href="about-sedona.html">О Седоне</a>
-        </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="about-sedona.html">О Седоне</a>
+          </li>
 
-        <li class="navigation-item">
-          <a class="navigation-link" href="catalog.html">Гостиницы</a>
-        </li>
-      </ul>
+          <li class="navigation-item">
+            <a class="navigation-link navigation-border" href="catalog.html">Гостиницы</a>
+          </li>
+        </ul>
 
-      <a class="logo-main" href="https://htmlacademy.ru">
-        <img src="img/logo/sedona.svg" width="138" height="70" alt="Логотип 'Syte of Cedona'">
-      </a>
+        <a class="logo-main" href="index.html">
+          <img src="img/logo/sedona.svg" width="138" height="70" alt="Логотип 'Syte of Cedona'">
+        </a>
 
-      <ul class="navigation-list navigation-user">
-        <li class="navigation-item">
-          <a class="navigation-link search" href="#">
-            <span class="visually-hidden">
-              Поиск
-            </span>
-          </a>
-        </li>
+        <ul class="navigation-list navigation-user">
+          <li class="navigation-item">
+            <a class="navigation-link search" href="#">
+              <span class="visually-hidden">
+                Поиск
+              </span>
+            </a>
+          </li>
 
-        <li class="navigation-item">
-          <a class="navigation-link favorite" href="#">
-            <span class="visually-hidden">Избранное</span>
-            <sup><span class="visually-hidden favorite-quantity">Количество выбранных гостиниц</span></sup>
-          </a>
-        </li>
+          <li class="navigation-item">
+            <a class="navigation-link favorite" href="#">
+              <span class="visually-hidden">Избранное</span>
+              <sup><span class="visually-hidden favorite-quantity">Количество выбранных гостиниц</span></sup>
+            </a>
+          </li>
 
-        <li class="navigation-item">
-          <a class="button button-brown button-description" href="#">
-            хочу сюда&excl;
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+          <li class="navigation-item">
+            <a class="button button-brown button-description" href="#">
+              хочу сюда&excl;
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <main class="main-catalog main-container">
+    <main class="main-catalog main-container">
       <h1 class="visually-hidden">Каталог гостиниц</h1>
       <section class="choice-hotels">
         <h2 class="inner-header-title">Гостиницы Седона</h2>
-        <header class="inner-header">
-          <ul class="breadcrumbs">
-            <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="index.html">
-                <span class="visually-hidden">Логотип главной страницы</span>
-              </a>
-            </li>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html">
+              <span class="visually-hidden">Логотип главной страницы</span>
+            </a>
+          </li>
 
-            <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link">Гостиницы</a>
-            </li>
-          </ul>
-        </header>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link">Гостиницы</a>
+          </li>
+        </ul>
 
         <h3 class="visually-hidden">Список гостиниц с фильтрами</h3>
 
@@ -139,7 +138,7 @@
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Стоимость,&#32;&#8381;&colon;</legend>
 
-            <p class="price">
+            <div class="price">
               <label class="catalog-filter-label">
                 <input class="catalog-filter-input" type="number" name="min-price" value="0" placeholder="от">
               </label>
@@ -147,7 +146,7 @@
               <label class="catalog-filter-label">
                 <input class="catalog-filter-input" type="number" name="max-price" value="9000" placeholder="до">
               </label>
-            </p>
+            </div>
 
             <p class="price-button">
               <button class="range-toggle toggle-min" type="button">
@@ -167,7 +166,7 @@
         </form>
       </section>
 
-      <div class="search-resalts">
+      <div class="search-results">
         <div class="output-area">
           <p class="output-field">
             Найдено гостиниц:
@@ -191,19 +190,20 @@
         </form>
 
         <div class="visually-card-hotel">
-          <a href="#" class="button">
-            <span class="visually-hidden title">Показать карточки</span>
+          <a href="#" class="button-gray title">
+            <span class="visually-hidden">Показать карточки</span>
           </a>
 
-          <a href="#" class="button">
-            <span class="visually-hidden item">Показать крупные карточки</span>
+          <a href="#" class="button-gray item">
+            <span class="visually-hidden">Показать крупные карточки</span>
           </a>
 
-          <a href="#" class="button button-border">
-            <span class="visually-hidden list">Показать список</span>
+          <a href="#" class="button-gray button-border list">
+            <span class="visually-hidden">Показать список</span>
           </a>
         </div>
       </div>
+
 
       <section class="hotel-cards">
         <h2 class="visually-hidden">Карточки гостиниц</h2>
@@ -225,9 +225,9 @@
 
             <div class="rating" aria-label="Четыре звезды" max-width="125" height="17"></div>
 
-              <span class="rating-description">
-                Рейтинг: 8,5
-              </span>
+            <span class="rating-description">
+              Рейтинг: 8,5
+            </span>
           </li>
 
           <li class="hotel-card">
@@ -268,9 +268,9 @@
 
             <div class="rating" aria-label="Две звезды" max-width="125" height="17"></div>
 
-              <span class="rating-description">
-                Рейтинг: 9,2
-              </span>
+            <span class="rating-description">
+              Рейтинг: 9,2
+            </span>
           </li>
 
           <li class="hotel-card">
@@ -289,15 +289,15 @@
 
             <div class="rating" aria-label="Две звезды" max-width="125" height="17"></div>
 
-              <span class="rating-description">
-                Рейтинг: 9,2
-              </span>
+            <span class="rating-description">
+              Рейтинг: 9,2
+            </span>
           </li>
         </ul>
       </section>
 
       <div class="download-more">
-        <button class="button button-download">Загрузить еще</button>
+        <button class="button button-download" type="button">Загрузить ещё</button>
       </div>
 
       <div class="pagination-hotels">
@@ -341,66 +341,63 @@
 
 
       <section class="section-newsletter background-white">
-        <div class="newsletter-container">
-          <h2 class="sing-up">Подпишитесь на рассылку</h2>
-          <p>Только полезная информация и никакого спама, честное бойскаутское&excl;</p>
-          <div class="form-float">
-            <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-              <p class="newsletter-email">
-                <label class="visually-hidden" for="newsletter-email">Email</label>
-                <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
-                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
-                <button class="button newsletter-button" type="submit">Подписаться</button>
-              </p>
-            </form>
-          </div>
-        </div>
+        <h2 class="sing-up">Подпишитесь на рассылку</h2>
+
+        <p class="sing-up-description">Только полезная информация и никакого спама, честное бойскаутское&excl;</p>
+
+        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="visually-hidden" for="newsletter-email">Email</label>
+          <input class="field-email" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+          <button class="button newsletter-button" type="submit">Подписаться</button>
+        </form>
       </section>
+    </main>
 
-  </main>
 
+    <footer class="page-footer">
+      <div class="footer-container">
+        <section class="footer-social">
+          <h2 class="visually-hidden">ссылки на соцсети</h2>
 
-  <footer class="page-footer">
-    <div class="footer-container">
-      <section class="footer-social">
-        <h2 class="visually-hidden">ссылки на соцсети</h2>
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a class="button button-white" href="https://www.instagram.com/htmlacademy/">
+                <span class="visually-hidden">Инстаграм</span>
+              </a>
+            </li>
 
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
-            <a class="button button-white" href="https://www.instagram.com/htmlacademy/">
-              <span class="visually-hidden">Инстаграм</span>
-            </a>
-          </li>
+            <li class="footer-social-item">
+              <a class="button button-white" href="https://www.facebook.com/htmlacademy">
+                <span class="visually-hidden">Фэйсбук</span>
+              </a>
+            </li>
 
-          <li class="footer-social-item">
-            <a class="button button-white" href="https://www.facebook.com/htmlacademy">
-              <span class="visually-hidden">Фэйсбук</span>
-            </a>
-          </li>
+            <li class="footer-social-item">
+              <a class="button button-white" href="https://www.youtube/c/HTMLAcademyRUS">
+                <span class="visually-hidden">Ютуб</span>
+              </a>
+            </li>
+          </ul>
+        </section>
 
-          <li class="footer-social-item">
-            <a class="button button-white" href="https://www.youtube/c/HTMLAcademyRUS">
-              <span class="visually-hidden">Ютуб</span>
-            </a>
-          </li>
-        </ul>
-      </section>
+        <section class="footer-contacts">
+          <h2 class="visually-hidden">Контакты</h2>
 
-      <section class="footer-contacts">
-        <h2 class="visually-hidden">Контакты</h2>
+          <address class="footer-contacts-address">
+            <a class="footer-contacts-address-phone"
+              href="tel:+78128121212">&#43;7 &lpar;812&rpar;812&ndash;12&ndash;12</a>
+          </address>
+        </section>
 
-        <address class="footer-contacts-address">
-          <a class="footer-contacts-address-phone"
-            href="tel:+78128121212">&#43;7 &lpar;812&rpar;812&ndash;12&ndash;12</a>
-        </address>
-      </section>
-
-      <section class="htmlacademy-list">
-        <h2 class="visually-hidden">Сведения о правообладателе</h2>
-        <a class="htmlacademy-link" href="https://htmlacademy.ru/"><span class="visually-hidden">HTMLAcademy</span></a>
-      </section>
-    </div>
-  </footer>
+        <section class="htmlacademy-list">
+          <h2 class="visually-hidden">Сведения о правообладателе</h2>
+          <a class="htmlacademy-link" href="https://htmlacademy.ru/"><span
+              class="visually-hidden">HTMLAcademy</span></a>
+        </section>
+      </div>
+    </footer>
+  </div>
 </body>
 
 </html>
