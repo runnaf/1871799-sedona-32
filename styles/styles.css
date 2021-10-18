@@ -113,12 +113,16 @@ select {font-family: inherit;
   text-align: center;
 }
 
+.page-header {
+  margin-bottom: -5px;
+  position: relative;
+  width: 1200px;
+}
+
 .navigation {
   display: flex;
   flex-direction: row;
-  width: 1200px;
   justify-content: space-around;
-  height: 65px;
 }
 
 .navigation-list {
@@ -179,7 +183,10 @@ select {font-family: inherit;
   width: 138px;
   z-index: 1;
   align-self: center;
-  padding: 20px;
+  padding-top: 0;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
 }
 
 .navigation-user {
