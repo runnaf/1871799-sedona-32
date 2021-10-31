@@ -420,7 +420,6 @@ html {
 
 .main-container {
   flex-grow: 1;
-  width: 1200px;
   margin: 0 auto;
 }
 
@@ -469,7 +468,7 @@ html {
   line-height: 36px;
   font-weight: 400;
   margin-bottom: 80px;
-  margin-top: 35px;
+  margin-top: 33px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -643,7 +642,7 @@ html {
   font-size: 22px;
   line-height: 26px;
   margin: 0;
-  margin-top: 32px;
+  margin-top: 30px;
 }
 
 .search-hotel .button {
@@ -693,7 +692,7 @@ html {
 
   padding: 0;
   margin: 0;
-  margin-top: 94px;
+  margin-top: 91px;
 }
 
 .sing-up-description {
@@ -712,8 +711,9 @@ html {
 .field-email {
   min-width: 600px;
   height: 60px;
-  padding-left: 22px;
+  padding-left: 20px;
   padding-right: 19px;
+  padding-bottom: 6px;
 }
 
 .field {
@@ -785,7 +785,7 @@ html {
   align-items: center;
   box-sizing: border-box;
   justify-content: space-between;
-  padding-top: 23px;
+  padding-top: 21px;
   padding-bottom: 27px;
 }
 
@@ -1263,7 +1263,7 @@ html {
   font-size: 60px;
   line-height: 67px;
   font-weight: 700;
-  padding-left: 6px;
+  padding-left: 5px;
   margin: 0;
   padding-top: 36px;
 }
@@ -1273,12 +1273,12 @@ html {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  margin-bottom: 42px;
+  margin-bottom: 41px;
   position: relative;
 }
 
 .breadcrumbs-item {
-  margin-right: 18px;
+  margin-right: 17px;
   display: flex;
   align-items: center;
 }
@@ -1357,12 +1357,11 @@ html {
 
 .catalog-filter-title {
   margin: 0;
-  padding: 0;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
   padding: 0;
-  margin-bottom: 31px;
+  margin-bottom: 32px;
 }
 
 .range-scale {
@@ -1420,6 +1419,7 @@ html {
 
 .catalog-filter-label {
   display: flex;
+  position: relative;
 }
 
 .range-input {
@@ -1430,7 +1430,7 @@ html {
   color: inherit;
   background-color: transparent;
   appearance: textfield;
-  padding-left: 15px;
+  padding-left: 17px;
   outline: 2px solid #FFFFFF;
   box-sizing: border-box;
   border: none;
@@ -1472,6 +1472,13 @@ html {
   border: 2px solid #FFFFFF;
   box-shadow: 3px 0px 0px 0px #81B3D2;
   border-radius: 4px 0px 0px 4px
+}
+
+.value {
+  position: absolute;
+  opacity: 0.3;
+  right: 16px;
+  top:25%;
 }
 
 .control {
@@ -1580,7 +1587,6 @@ html {
   padding-right: 5px;
   padding-left: 5px;
   box-sizing: border-box;
-  min-width: 160px;
   justify-content: center;
   border: none;
   margin-top: 61px;
@@ -1610,7 +1616,6 @@ html {
   line-height: inherit;
   width: 100px;
   height: 32px;
-  border: none;
   margin-top: 5px;
   border: 3px solid transparent;
   box-sizing: border-box;
@@ -1653,11 +1658,12 @@ html {
 }
 
 .output-area {
-  min-width: 528px;
+  min-width: 529px;
 }
 
 .output-field {
   margin: 0;
+  margin-top: 4px;
   padding: 0;
 }
 
@@ -1705,6 +1711,7 @@ html {
 .visually-card-hotel {
   display: flex;
   margin-left: 71px;
+  margin-top: 1px;
 }
 
 .button-gray {
@@ -1713,8 +1720,8 @@ html {
   margin-left: 9px;
   background-position: center;
   display: flex;
-  width: 44px;
-  height: 44px;
+  width: 45px;
+  height: 45px;
 }
 
 .card-grid-toggle {
@@ -1793,7 +1800,6 @@ html {
 .product-card-title {
   margin: 0;
   padding: 0;
-  margin-top: 2px;
 }
 
 .habitation {
@@ -1815,7 +1821,7 @@ html {
   width: 160px;
   height: 37px;
   display: block;
-  padding-top: 10px;
+  padding-top: 11px;
   padding-bottom: 10px;
   padding-right: 10px;
   padding-left: 11px;
@@ -1916,7 +1922,7 @@ html {
   width: 1056px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
 }
 
 .button-download {
@@ -1995,7 +2001,7 @@ html {
   margin: 0;
   padding: 0;
   align-items: center;
-  margin-top: 2px;
+  margin-top: 3px;
   position: relative;
 }
 
@@ -2013,7 +2019,6 @@ html {
   box-sizing: border-box;
   border: 2px solid #E6E6E6;
   border-radius: 4px;
-  appearance: textfield;
   appearance: none;
 }
 
@@ -2051,7 +2056,7 @@ html {
 }
 
 .background-white .newsletter-form {
-  margin-top: 47px;
+  margin-top: 49px;
 }
 
 .button-white {
