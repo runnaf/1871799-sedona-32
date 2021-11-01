@@ -41,8 +41,8 @@
             </a>
           </li>
 
-          <li class="navigation-item">
-            <a class="navigation-link link favorite" href="#">
+          <li class="navigation-item favorite">
+            <a class="navigation-link link" href="#">
               <svg class="navigation-icon" aria-hidden="true" focusable="false" width="18" height="17"
                 xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -51,12 +51,12 @@
               <span class="visually-hidden">Избранное</span>
               <span class="favorite-quantity">12</span>
             </a>
-            <div class="popover popover-favorite popover-open">
+            <div class="popover popover-favorite">
               <h2 class="visually-hidden">Корзина</h2>
               <div class="popover-content">
                 <ul class="favorite-items-list">
                   <li class="favorite-item">
-                    <a class="favorite-link link">
+                    <a class="favorite-link link" href="#">
                       <img class="favorite-image" src="img/catalog/hotels/hotel-2.jpg" width="48" height="48"
                         alt="Дом на фоне гор в Седоне">
                       <h3 class="favorite-hotel-title">Desert Quail Inn</h3>
@@ -73,7 +73,7 @@
                     </button>
                   </li>
                   <li class="favorite-item">
-                    <a class="favorite-link">
+                    <a class="favorite-link" href="">
                       <img class="favorite-image" src="img/catalog/hotels/hotel-3.jpg" width="48" height="48"
                         alt="Дом на фоне гор в Седоне">
                       <h3 class="favorite-hotel-title">Villas at Poco Diablo</h3>
@@ -196,8 +196,7 @@
 
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="newsletter-email">Email</label>
-          <input class="field field-email" placeholder="Ваш e-mail" type="email" name="newsletter-email"
-            id="newsletter-email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+          <input class="field field-email" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
           <button class="link button newsletter-button" type="submit">Подписаться</button>
         </form>
       </section>
@@ -281,15 +280,21 @@
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="field-group">
               <label class="modal-filter-label" for="arrival-date">Дата заезда:</label>
-              <input class="field" type="date" id="arrival-date">
+              <input class="field" type="text" id="arrival-date" placeholder="27 апреля 2020">
               <p class="truth tip tip-close">На эти даты есть свободные номера. Пока есть.</p>
               <p class="false tip">Мы не можем отправить вас в прошлое.</p>
+              <button class="calendar" type="submit">
+                <span class="visually-hidden">Календарь</span>
+              </button>
             </div>
             <div class="field-group">
               <label class="modal-filter-label" for="departure-date">Дата выезда:</label>
-              <input class="field" type="date" id="departure-date">
+              <input class="field" type="text" id="departure-date" placeholder="1 сентября 2021">
               <p class="truth tip">На эти даты есть свободные номера. Пока есть.</p>
               <p class="false tip tip-close">Мы не можем отправить вас в прошлое.</p>
+              <button class="calendar" type="submit">
+                <span class="visually-hidden">Календарь</span>
+              </button>
             </div>
             <div class="form-quantity-visiter">
               <label class="modal-filter-label" for="adult">Взрослые:</label>
