@@ -333,7 +333,7 @@ html {
 }
 
 .favorite-link:focus {
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
   border-radius: 10px;
 }
 
@@ -369,6 +369,9 @@ html {
 }
 
 .cart-item-button {
+  position: relative;
+  top: 4px;
+  right: -2px;
   width: 36px;
   height: 36px;
   margin-top: 4px;
@@ -377,6 +380,32 @@ html {
   box-sizing: border-box;
   border: 3px solid transparent;
   background-color: inherit;
+}
+
+.cart-icon {
+  position: absolute;
+  top:0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  margin: auto;
+  fill: rgba(0, 0, 0, 0.3);
+}
+
+.cart-item-button:hover .cart-icon {
+  fill: #000000;
+}
+
+.cart-item-button:focus {
+  border: 3px solid #83B3D3;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.cart-item-button:active .cart-icon {
+  fill: rgba(0, 0, 0, 0.2);
 }
 
 .popover-close-button {
@@ -434,7 +463,7 @@ html {
   height: 485px;
   margin: 0 auto;
   background: url("../img/decoration-elements/decor-zigzag.svg") bottom no-repeat,
-              url("../img/background-mountains.jpg") top no-repeat;
+    url("../img/background-mountains.jpg") top no-repeat;
 
   background-color: #756257;
 }
@@ -1493,7 +1522,7 @@ html {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.control-input:disabled + .control-mark {
+.control-input:disabled+.control-mark {
   background-color: #FFFFFF;
 }
 
@@ -1503,7 +1532,7 @@ html {
   background-repeat: no-repeat;
 }
 
-.control-input[type="radio"] + .control-mark {
+.control-input[type="radio"]+.control-mark {
   border-radius: 50%;
 }
 
