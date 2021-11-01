@@ -704,12 +704,12 @@ html {
   background-color: #756257;
 }
 
-.newletter-image {
+.newsletter-image {
   background-image: url("../img/background-washed-out.jpg");
   background-repeat: no-repeat;
   background-color: #756257;
   color: #FFFFFF;
-  background-size: 100%;
+  background-size: 100% 100%;
 }
 
 .sing-up {
@@ -815,7 +815,7 @@ html {
 }
 
 .footer-social {
-  width: 294px;
+  width: 330px;
 }
 
 .footer-social-list {
@@ -920,7 +920,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  width: 270px;
+  width: 330px;
   margin: 0;
   padding: 0;
 }
@@ -1286,7 +1286,7 @@ html {
   background-repeat: no-repeat;
   color: #FFFFFF;
   background-color: #756257;
-  background-size: 100%;
+  background-size: 100% 100%;
 }
 
 .inner-header-title {
