@@ -580,7 +580,7 @@ html {
   padding: 0;
 }
 
-.advantage-first .advantage-description:first-of-type {
+.advantage-item:first-of-type .advantage-description {
   width: 195px;
 }
 
@@ -786,7 +786,7 @@ html {
 }
 
 .field::placeholder {
-  font-family: inherit;
+  font-family: inherit, sans-serif;
   font-size: 18px;
   line-height: 26px;
   color: #000000;
