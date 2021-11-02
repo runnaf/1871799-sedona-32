@@ -215,7 +215,7 @@ html {
 .logo-main[href]:focus {
   outline-color: #83B3D3;
   border: none;
-  background-color: #FFFFFF;
+  background-color: #83B3D3;
 }
 
 .logo-main[href]:active {
