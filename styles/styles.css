@@ -46,10 +46,6 @@ html {
   clip: rect(0 0 0 0)
 }
 
-.link {
-  cursor: pointer;
-}
-
 .link::-moz-focus-inner,
 .link::-moz-focus-inner {
   border: 0;
@@ -78,6 +74,7 @@ html {
   background-color: #83B3D3;
   border: 3px solid transparent;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -166,19 +163,19 @@ html {
 }
 
 
-.navigation-link:hover {
+.navigation-link[href]:hover {
   color: #756257;
   background-color: inherit;
 }
 
-.navigation-link:focus {
+.navigation-link[href]:focus {
   color: #756257;
   border: 3px solid #83B3D3;
   border-radius: 10px;
   background-color: inherit;
 }
 
-.navigation-link:active {
+.navigation-link[href]:active {
   opacity: 0.3;
   color: #756257;
   background-color: inherit;
@@ -210,19 +207,18 @@ html {
   border-radius: 10px;
 }
 
-.logo-main:hover {
+.logo-main[href]:hover {
   opacity: 0.6;
   border: none;
 }
 
-.logo-main:focus {
-  /* opacity: 0.6; */
+.logo-main[href]:focus {
   outline-color: #83B3D3;
   border: none;
   background-color: #FFFFFF;
 }
 
-.logo-main:active {
+.logo-main[href]:active {
   opacity: 0.3;
   border: none;
 }
@@ -815,7 +811,7 @@ html {
 }
 
 .footer-social {
-  width: 330px;
+  width: 355px;
 }
 
 .footer-social-list {
@@ -1015,7 +1011,7 @@ html {
 }
 
 .modal-close-button:active .close-modal {
-  fill: rgba(0, 0, 0, 0.3)
+  fill: rgba(0, 0, 0, 0.3);
 }
 
 .modal-title {
@@ -1040,7 +1036,7 @@ html {
 }
 
 .modal-filter-label {
-  margin-top: 5px;
+  margin-top: 4px;
   padding-left: 2px;
   font-weight: 700;
   font-size: 18px;
@@ -1095,12 +1091,12 @@ html {
 .form-quantity-visiter {
   display: grid;
   grid-template-columns: 157px 131px 102px min-content 133px;
-  margin-bottom: 40px;
+  margin-bottom: 41px;
 }
 
 .form-quantity-visiter .modal-filter-label:nth-of-type(1) {
   grid-column: 1/2;
-  margin-top: 5px;
+  margin-top: 7px;
 }
 
 .form-quantity-visiter .number:nth-of-type(1) {
@@ -1110,7 +1106,7 @@ html {
 .form-quantity-visiter .modal-filter-label:nth-of-type(2) {
   grid-column: 3/4;
   justify-self: end;
-  margin-top: 5px;
+  margin-top: 7px;
 }
 
 .form-quantity-visiter .information {
@@ -1121,6 +1117,7 @@ html {
   height: 25px;
   margin-left: 10px;
   margin-right: 18px;
+  margin-top: 5px;
   background-color: #83B3D3;
   border-radius: 50%;
   border: none;
@@ -1132,10 +1129,6 @@ html {
 }
 
 .information:hover .information-content {
-  display: block;
-}
-
-.information:focus .information-content {
   display: block;
 }
 
@@ -1190,12 +1183,11 @@ html {
 
 .number .link {
   position: absolute;
-  top: 13px;
+  top: 15px;
   bottom: 0;
   width: 20px;
   height: 20px;
   padding: 0;
-  border: none;
   background-color: transparent;
   border: 2px solid transparent;
   box-sizing: border-box;
@@ -1255,7 +1247,6 @@ html {
   box-sizing: border-box;
 }
 
-
 .modal-content .button {
   display: flex;
   align-items: center;
@@ -1278,7 +1269,7 @@ html {
 .choice-hotels {
   display: flex;
   flex-direction: column;
-  margin-bottom: 42px;
+  margin-bottom: 40px;
   padding-left: 65px;
   padding-right: 72px;
   padding-bottom: 70px;
@@ -1318,20 +1309,24 @@ html {
   font-size: 16px;
   line-height: 21px;
   color: #FFFFFF;
+  outline: 3px solid transparent;
+  border-radius: 4px;
+  border: none;
 }
 
-.breadcrumbs-link:hover {
+.breadcrumbs-link[href]:hover {
   opacity: 0.6;
 }
 
-.breadcrumbs-link:focus {
-  border: 3px solid #83B3D3;
-  box-sizing: border-box;
-  border-radius: 4px;
+.breadcrumbs-link[href]:focus {
+  outline-color: #83B3D3;
+  border: none;
 }
 
-.breadcrumbs-link:active {
+.breadcrumbs-link[href]:active {
   opacity: 0.3;
+  outline-color: #83B3D3;
+  border: none;
 }
 
 .home {
@@ -1510,54 +1505,56 @@ html {
   position: relative;
   display: block;
   padding-left: 40px;
+  top: -2px;
+  padding-top: 1px;
 }
 
-.control-mark {
+.control::before {
+  content: "";
   position: absolute;
-  top: 0px;
+  top: 3px;
   left: 0px;
   width: 14px;
   height: 14px;
+  display: inline-block;
   border: 3px solid transparent;
   background-color: #FFFFFF;
   border-radius: 4px;
 }
 
-.control:hover .control-mark {
+.control-input:hover + .control::before {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-.control:focus-visible .control-mark {
+.control-input:focus-visible + .control::before {
   background-color: rgba(255, 255, 255, 0.6);
   outline: 3px solid #83B3D3;
   border-radius: 4px;
 }
 
-.control:active .control-mark {
+.control-input:active + .control::before {
   background-color: rgba(255, 255, 255, 0.3);
+  outline: 3px solid #83B3D3;
 }
 
-.control-input:disabled+.control-mark {
-  background-color: #FFFFFF;
-}
-
-.control-input[type="checkbox"]:checked+.control-mark {
+.control-input[type="checkbox"]:checked+.control::before {
   background-image: url("../img/icons/tick.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.control-input[type="radio"]+.control-mark {
+.control-input:disabled+.control::before {
+  background-color: #FFFFFF;
+}
+
+.control-input[type="radio"]+.control::before {
   border-radius: 50%;
 }
 
-.control-input[type="radio"]:checked+.control-mark::before {
+.control-input[type="radio"]:checked+.control::after {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto;
+  top: 8px;
+  left: 5px;
   width: 10px;
   height: 10px;
   background-color: #3F5E72;
@@ -1572,7 +1569,7 @@ html {
 }
 
 .catalog-filter-item {
-  padding-bottom: 14px;
+  padding-bottom: 12px;
 }
 
 .price {
@@ -1644,6 +1641,7 @@ html {
   font-size: inherit;
   line-height: inherit;
   border: 3px solid transparent;
+  cursor: pointer;
 }
 
 .reset-apply:hover {
@@ -1676,7 +1674,7 @@ html {
   align-items: center;
   width: 1060px;
   margin: 0 auto;
-  margin-bottom: 41px;
+  margin-bottom: 43px;
   padding: 0;
   box-sizing: border-box;
 }
@@ -1731,20 +1729,21 @@ html {
 }
 
 .select:active .sort-icon {
-  fill: rgba(0, 0, 0, 0.3);
+  fill: rgba(0, 0, 0, 0.2);
 }
 
 .visually-card-hotel {
   display: flex;
-  margin-left: 73px;
-  margin-right: 5px;
+  margin-left: 71px;
+  margin-right: 4px;
+  margin-top: 5px;
 }
 
 .button-gray {
   display: flex;
   background-position: center;
-  width: 45px;
-  height: 45px;
+  width: 46px;
+  height: 46px;
   margin-left: 10px;
   border: 2px solid #E6E6E6;
   border-radius: 4px;
@@ -1850,7 +1849,7 @@ html {
   grid-column: 3/5;
   align-self: start;
   width: fit-content;
-  margin-bottom: 2px;
+  margin-top: 2px;
   padding-top: 7px;
   padding-bottom: 7px;
   padding-right: 12px;
@@ -1954,9 +1953,10 @@ border: none;
   grid-row: 1/2;
   grid-column: -2/-1;
   justify-self: center;
-  margin-top: 5px;
+  margin-top: 14px;
   background-image: url("../img/decoration-elements/star.svg");
   background-repeat: space;
+  height: 20px;
 }
 
 .rating-one {
@@ -1969,10 +1969,11 @@ border: none;
 
 .rating-three {
   width: 68px;
+  margin-right: 5px;
 }
 
 .rating-four {
-  width: 88px;
+  width: 89px;
 }
 
 .rating-five {
@@ -2123,7 +2124,7 @@ border: none;
 .sort-icon {
   width: 12px;
   height: 7px;
-  fill: rgba(0, 0, 0, 0.6)
+  fill: rgba(0, 0, 0, 0.3)
 }
 
 .background-white {
