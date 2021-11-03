@@ -567,6 +567,8 @@ html {
 .picture-sedona {
   grid-column: 2/4;
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .advantage-title {
