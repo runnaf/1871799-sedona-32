@@ -522,7 +522,7 @@ html {
 
 .advantage-list {
   display: grid;
-  grid-template-columns: repeat(3, 400px);
+  grid-template-columns: repeat(3, min-content);
   grid-template-rows: repeat(4, min-content);
   margin: 0;
   padding: 0;
